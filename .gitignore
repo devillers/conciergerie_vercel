@@ -26,9 +26,18 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-
+.env
+.Productitems.js
 
 # vercel
 .vercel
 
-package-lock.json
+# pages
+.auth.js
+.seed.js
+.cart.js
+.login.js
+.login2.js
+.user.js
+
+

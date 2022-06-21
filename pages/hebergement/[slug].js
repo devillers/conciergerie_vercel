@@ -1,10 +1,7 @@
-//import data from '../../utils/data';
-//import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import db from '../../utils/db';
 import Chalet from '../../models/Chalet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import Link from 'next/link';
 import Image from 'next/image';
 import {
   faBath,
@@ -28,16 +25,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
-/*
-salut matt je t avouerai avoir tout tenté et n'arrive toujours pas à recuperer mon slug. 
-Ma cerveau n'y arrive plus. Ton aide serait la bienvenue  :)
-*/
-
 export const getStaticPaths = async () => {
   await db.connect();
-  const res = await Chalet.find({});
-  const data = await res.json();
-  const paths = data.map((chalet) => {
+  const chalets = await Chalet.find({});
+  const paths = chalets.map((chalet) => {
     return {
       params: { slug: chalet.slug },
     };
@@ -51,18 +42,19 @@ export const getStaticPaths = async () => {
 export async function getStaticProps(context) {
   await db.connect();
   const slug = context.params.slug;
-  const res = (await Chalet.find({})) + slug;
-  const data = await res.json();
+  const chalet = await Chalet.findOne({ slug });
   return {
-    props: { chalet: data },
+    props: {
+      chalet: chalet.toObject({
+        transform: (doc, ret) => {
+          ret._id = doc._id.toString();
+        },
+      }),
+    },
   };
 }
 
 const HebergementScreen = ({ chalet }) => {
-  // const { query } = useRouter();
-  // const { slug } = query;
-  // const chalet = data.chalets.find((x) => x.slug === slug);
-
   return (
     <>
       <Layout title="hebergement">
