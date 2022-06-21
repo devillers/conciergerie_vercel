@@ -384,7 +384,7 @@ const HebergementScreen = ({ chalet }) => {
                 )}
               </li>
 
-              <li className="flex items-center mb-2">
+              <li className="flex items-center mb-2 ">
                 {chalet.airbnb ? (
                   <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-amber-600 text-white rounded-full">
                     <Link href={chalet.private}>
