@@ -283,7 +283,7 @@ const HebergementScreen = ({ chalet }) => {
           </div>
 
           {/* partie 4 */}
-          <div className="col-span-1 p-4 text-xs">
+          <div className="col-span-2 p-4 text-xs md:col-span-1">
             <ul>
               <li className="flex items-center mb-2">
                 {chalet.stowart ? (
@@ -360,7 +360,7 @@ const HebergementScreen = ({ chalet }) => {
 
           {/* partie 5 */}
 
-          <div className=" p-4 text-xs font-comfortaa">
+          <div className="col-span-2 w-full p-4 text-xs font-comfortaa md:col-auto">
             <ul>
               <li className="flex items-center mb-2">
                 {chalet.booking ? (
@@ -374,7 +374,7 @@ const HebergementScreen = ({ chalet }) => {
 
               <li className="flex items-center mb-2">
                 {chalet.airbnb ? (
-                  <div className="px-3 py-2 bg-red-600 text-white rounded-full">
+                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-pink-600 text-white rounded-full">
                     <Link href={chalet.airbnb}>
                       <a target="_blank">réserver sur Airbnb</a>
                     </Link>
@@ -386,7 +386,7 @@ const HebergementScreen = ({ chalet }) => {
 
               <li className="flex items-center mb-2">
                 {chalet.airbnb ? (
-                  <div className="px-3 py-2 bg-pink-600 text-white rounded-full">
+                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-amber-600 text-white rounded-full">
                     <Link href={chalet.private}>
                       <a target="_blank">réserver en direct</a>
                     </Link>
