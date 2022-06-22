@@ -1,17 +1,35 @@
 import Layout from '../components/Layout';
+import CleaningCard from '../components/CleaningCard';
+import db from '../utils/db';
+import Cleaning from '../models/Cleaning';
 
-export default function Home() {
-  return (
-    <>
-      <Layout title="Accueil">
-        <div className=" min-h-screen flex items-center justify-center px-16">
-          <div className="relative w-full max-w-lg">
-            <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-            <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-          </div>
-        </div>
-      </Layout>
-    </>
-  );
+const Home = ({ cleanings }) => (
+  <>
+    <Layout title="Accueil">
+      <div>
+        {cleanings.map((cleaning) => (
+          <CleaningCard cleaning={cleaning} key={cleaning._id} />
+        ))}
+      </div>
+    </Layout>
+  </>
+);
+export async function getStaticProps() {
+  await db.connect();
+
+  const res = await Cleaning.find({});
+  const cleanings = res.map((doc) => {
+    return doc.toObject({
+      transform: (doc, ret) => {
+        ret._id = doc._id.toString();
+      },
+    });
+  });
+  return {
+    props: {
+      cleanings,
+    },
+  };
 }
+
+export default Home;

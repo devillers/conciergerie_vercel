@@ -15,6 +15,29 @@ const data = {
       isAdmin: false,
     },
   ],
+  cleaning: [
+    {
+      mainTitle:'Nettoyage et frais d entretien',
+      title: 'Gestion complète de votre ménage',
+      description:
+        'Si vous vous lancez dans la location saisonnière, il peut être difficile d’être toujours présent et réactif aux demandes des voyageurs, et c’est encore plus vrai concernant le nettoyage de votre logement entre chaque location. Pour accueillir comme il se doit tous vos voyageurs, nous vous proposons un service de ménage Airbnb complet.',
+      secondTitle: 'Des prestaires de ménage professionnels pour vos locations',
+      prestataires:
+        'Nos prestataires ont pour la plupart une expérience professionnelle confirmée dans le domaine de hôtellerie.',
+      qualityTitle:
+        'Un nettoyage complet pour un logement propre en toute circonstance',
+      qualityContent:
+        'Notre service de ménage Airbnb est conçu pour que votre logement soit bien propre et sente bon avant l’arrivée de chaque voyageur : Changement du linge de lit, Changement des serviettes, tapis de bain et torchons, Logement nettoyé de fond en comble, avec des produits nettoyants de qualité. Notre service de ménage est conçu pour que tout soit parfait pour l’arrivée de vos voyageurs et assurer une satisfaction maximale.',
+      consommableTitle: 'Mise à dispostion des consomables de base',
+      consommableContent:
+        'Afin que tout soit parfait pour vos voyageurs, nous leur fournissons tous les consommables nécessaires à leur séjour : petits flacons de savon et de shampoing, sacs-poubelle et papier toilette. C’est ce sens du détail qui assure la qualité de nos services et un accueil chaleureux réussi pendant votre location saisonnière.',
+      cleaningFeesTitle: 'Des frais de ménage payés par vos locataires',
+      cleaningFeesContent:
+        'Pour chacune des réservations, nous facturons les frais de ménage aux voyageurs. Chaque voyageur paie donc le ménage fait après son séjour. La plupart du temps, nous prenons à notre charge le ménage fait avant l’arrivée du premier voyageur. Vous n’avez donc rien à débourser !',
+    },
+  ],
+  
+
   products: [
     {
       name: 'kit drap simple',
