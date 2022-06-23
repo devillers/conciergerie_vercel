@@ -17,7 +17,7 @@ const data = {
   ],
   cleaning: [
     {
-      mainTitle:'Nettoyage et frais d entretien',
+      mainTitle: 'Nettoyage et frais d entretien',
       title: 'Gestion complète de votre ménage',
       description:
         'Si vous vous lancez dans la location saisonnière, il peut être difficile d’être toujours présent et réactif aux demandes des voyageurs, et c’est encore plus vrai concernant le nettoyage de votre logement entre chaque location. Pour accueillir comme il se doit tous vos voyageurs, nous vous proposons un service de ménage Airbnb complet.',
@@ -36,7 +36,37 @@ const data = {
         'Pour chacune des réservations, nous facturons les frais de ménage aux voyageurs. Chaque voyageur paie donc le ménage fait après son séjour. La plupart du temps, nous prenons à notre charge le ménage fait avant l’arrivée du premier voyageur. Vous n’avez donc rien à débourser !',
     },
   ],
-  
+
+  check_In: [
+    {
+      title_one: 'CHECK IN Airbnb',
+      description_one:
+        'Nous prenons soin de vos voyageurs grâce à un service de gestion des arrivées bien rodé. Préparation de l’appartement, remise des clés, communication avec vos voyageurs : Nous vous garantissons un service 5 étoiles pour l arrivée des voyageurs.',
+      title_two: 'CheckIn CheckOut',
+      description_two:
+        'Notre équipe est disponible 7j/7 pour répondre à toutes les questions des voyageurs et s assurer du bon déroulement de leur séjour. Un service de ménage de qualité hôtelière est réalisé avant l arrivée de chaque voyageur. Nous fournissons tout le linge de maison (draps, serviettes, tapis de bain, torchons) ainsi que les consommables de base (papier toilette, sac poubelle, savon, shampoing), comme à lhôtel ! Une fois le ménage réalisé, nous gérons la remise des clés pour que vos voyageurs puissent avoir accès facilement à votre logement !',
+      title_three: 'A l écoute de vos voyageurs durant votre absence',
+      description_three:
+        'Avoir recours à conciergerie pour les check-in Airbnb, c’est aussi s’assurer que vos voyageurs passent un bon séjour : l’attention la plus grande est portée au séjour et au confort de vos voyageurs, afin qu’ils soient plus cléments lors de la notation de votre bien, les commentaires donnés étant un précieux avantage pour augmenter l’attractivité de votre annonce Airbnb.',
+    },
+  ],
+  check_Out: [
+    {
+      title_one: 'CHECK OUT Airbnb',
+      description_one:
+        'Check-out Airbnb et gestion des départs : lorsque vos voyageurs quittent votre bien, nous le préparons pour qu’il soit prêt à accueillir de nouveaux voyageurs, ou vous-même',
+      title_two: 'Gestion des clés',
+      description_two:
+        'Pour un check-out réussi, nous rappelons aux voyageurs qu ils doivent quitter votre logement avant 10h le dernier jour de leur location et nous leur transmettons toutes les informations nécessaires pour la remise des clés via la conversation Airbnb. Bien sûr, nous nous tenons comme d habitude à leur entière disposition s ils ont la moindre question.',
+      title_three: 'Préparation du logement pour les prochains locataires',
+      description_three:
+        'Une fois les voyageurs ayant réalisés leur check-out Airbnb, une équipe de ménage prend le relai, pour nettoyer le logement de fond en comble et ne laisser aucun trace du passage des précédents voyageurs : l ensemble du linge de maison est changé, les consommables réapprovisionnés, les poubelles sont vidées, les sols sont lavés',
+      title_four:
+        'Après le départ des derniers voyageurs, notre équipe de ménage passe une dernière fois pour remettre un bon coup de propre dans votre logement : à votre retour, votre logement sent bon et est presque plus propre que quand vous l’aviez laissé !',
+      description_four:
+        'Après le départ des derniers voyageurs, notre équipe de ménage passe une dernière fois pour remettre un bon coup de propre dans votre logement : à votre retour, votre logement sent bon et est presque plus propre que quand vous l’aviez laissé !',
+    },
+  ],
 
   products: [
     {
