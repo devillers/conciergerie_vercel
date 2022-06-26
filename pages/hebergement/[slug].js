@@ -57,10 +57,8 @@ export async function getStaticProps(context) {
 const HebergementScreen = ({ chalet }) => {
   return (
     <>
-      <Layout title="hebergement" >
-        <h1 className=" text-3xl pt-4 pb-4 font-poppin ">
-          {chalet.name}{' '}
-        </h1>
+      <Layout title="hebergement">
+        <h1 className=" text-3xl p-4 font-poppin ">{chalet.name} </h1>
         <div className="grid overflow-hidden gap-1 md:grid-cols-2 grid-rows-2 grid-flow-row lg:grid-cols-4">
           <div className="relative box row-span-2 col-span-2 h-96  ">
             <Image
@@ -365,9 +363,11 @@ const HebergementScreen = ({ chalet }) => {
           <div className="col-span-2 w-full p-4 text-xs font-comfortaa md:col-auto">
             <ul>
               <li className="flex items-center mb-2">
-                {chalet.booking ? (
-                  <div className="px-3 py-2 bg-blue-600 text-white rounded-full">
-                    <Link href={''}>réserver sur booking</Link>
+                {chalet.airbnb ? (
+                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-cyan-500 shadow-xl shadow-cyan-500/20 text-white rounded-full">
+                    <Link href={chalet.booking}>
+                      <a target="_blank">réserver sur Airbnb</a>
+                    </Link>
                   </div>
                 ) : (
                   ''
@@ -376,7 +376,7 @@ const HebergementScreen = ({ chalet }) => {
 
               <li className="flex items-center mb-2">
                 {chalet.airbnb ? (
-                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-pink-600 text-white rounded-full">
+                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-pink-500 shadow-xl shadow-pink-500/20 text-white rounded-full">
                     <Link href={chalet.airbnb}>
                       <a target="_blank">réserver sur Airbnb</a>
                     </Link>
@@ -388,7 +388,7 @@ const HebergementScreen = ({ chalet }) => {
 
               <li className="flex items-center mb-2 ">
                 {chalet.airbnb ? (
-                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-amber-600 text-white rounded-full">
+                  <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-sky-500 shadow-xl shadow-sky-500/20 text-white rounded-full">
                     <Link href={chalet.private}>
                       <a target="_blank">direct propriétaire</a>
                     </Link>

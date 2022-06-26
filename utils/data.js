@@ -474,7 +474,7 @@ const data = {
       image_5: '/images/valentin/valentin_4.webp',
       airbnb: 'https://airbnb.com/h/lachandelle',
       private: 'https://www.appchaletmontjoye.conciergerie-saint-gervais.com/',
-      booking: '',
+      booking: 'https://www.appchaletmontjoye.conciergerie-saint-gervais.com/',
       bedrooms: '4 chambres',
       capacity: 12,
       sauna: 0,
