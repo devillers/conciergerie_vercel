@@ -361,9 +361,8 @@ const data = {
       price: 200,
       adresse: '147 Chem. du Thovex, 74170 Saint-Gervais-les-Bains, France',
       description:
-        'Bienvenus dans cette splendide ferme de 1842 fraichement rénovée avec des prestations haut de gamme, Navette au pied de la ferme pour accès au télésiège des Chattrix à 1km, et au village de St Nicolas ou St Gervais, Proche du village authentique de Saint Nicolas de Véroce, vue : Mont Blanc, chaîne des Fix, une partie des Aravis et forêt.Séjour avec cheminée, cuisine et salle à manger de 100m2. 4 chambres doubles, 1 avec canapé lit, 2 dortoirs, 5 SDB.Terrasse couverte et jardin',
-      quartier:
-        'Accès aux chemins de randonnée directement.Départ depuis la ferme en ski de randonnée.Espace Evasion/Mont blanc pour le ski de piste (St Nicolas de Veroce, St Gervais, Megeve). Navette au pied de la ferme (Arrêt les Vincents) pour accéder au télésiège des chattrix à 1km ou aux villages de St Nicolas ou St Gervais.',
+        "L'appartement est au 2è étage d'une ferme à l'architecture haut savoyarde typique entièrement rénovée en 2020 et située en lisière de forêt dans un hameau ancien du village. Vous disposerez de 5 chambres ainsi que de 3sdb et 3wc dont 1 séparé. Espaces de réception en conséquence avec un grande table pour tous les convives et un salon confortable. La cuisine est spacieuse et équipée pour cuisiner comme à la maison et une vaste mezzanine permettra aux enfants d'avoir un espace de jeu indépendant. Le logement proximités des remontés mécaniques et du domaine de ski fond (500m). 15mn à pied de la zone de loisir du pont et 5mn du centre village. Exposé sud ouest avec le soleil en fin de journé. départ de sentiers de randonnée au pied de la maison (refuge et glacier de tré la tête). Secteur très calme et aux portes de la réserve naturelle des contamines montjoie.",
+      quartier: '',
     },
     {
       name: 'Chalet luxe & calme La Chandelle, 6-12 p, Vue+++',
@@ -477,10 +476,10 @@ const data = {
       booking: 'https://www.appchaletmontjoye.conciergerie-saint-gervais.com/',
       bedrooms: '4 chambres',
       capacity: 12,
-      sauna: 0,
-      jacuzzy: 1,
-      stowart: 0,
-      hammam: 0,
+      sauna: '',
+      jacuzzy: '1 jacuzzy',
+      stowart: '',
+      hammam: '',
       firePlace: '1 cheminée',
       carPark: '2 places de parking',
       busTopName: 0,
