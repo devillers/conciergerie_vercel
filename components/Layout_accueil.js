@@ -27,7 +27,7 @@ export default function Layout({ children, title }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col justify-between min-h-screen">
+      <div className="w-full flex flex-col justify-between min-h-screen">
         <header>
           {/* <nav className="flex h-12 justify-between shadow-sm px-4 items-center">
             <Link href="/">
@@ -60,7 +60,7 @@ export default function Layout({ children, title }) {
           <NavBar />
           {/* <Header /> */}
         </header>
-        <main className="container m-auto  ">{children}</main>
+        <main className="w-full m-auto  ">{children}</main>
         <Footer />
       </div>
     </>

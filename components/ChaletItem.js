@@ -1,10 +1,8 @@
 //import { WifiIcon } from '@heroicons/react/outline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faBathtub,
-  faFire,
-  faHotTubPerson,
-  faParking,
+  faBath,
+  faShower,
   faPerson,
   faWifi,
 } from '@fortawesome/free-solid-svg-icons';
@@ -32,7 +30,7 @@ export default function ChaletItem({ chalet }) {
               <h2 className="text-md pt-2 font-bold">{chalet.nameShort} </h2>
             </li>
             <li>
-              <p className="text-sm pt-2 pb-2">{chalet.village} </p>
+              <p className="text-xs pb-3">{chalet.village} </p>
 
               <div className="flex text-slate-600">
                 <div className="mr-1">
@@ -44,29 +42,21 @@ export default function ChaletItem({ chalet }) {
                 </div>
 
                 <div className=" relative">
-                  {chalet.sdb ? (
-                    <FontAwesomeIcon className="icon" icon={faBathtub} />
+                  {chalet.bathTube ? (
+                    <FontAwesomeIcon className="icon" icon={faBath} />
                   ) : (
                     ''
                   )}
-                  <div className="rond">{chalet.sdb}</div>
+                  <div className="rond">{chalet.bathTube}</div>
                 </div>
-                {chalet.hammam || chalet.sauna || chalet.jacuzzy ? (
-                  <FontAwesomeIcon className="icon" icon={faHotTubPerson} />
-                ) : (
-                  ''
-                )}
-                {chalet.parking ? (
-                  <FontAwesomeIcon className="icon" icon={faParking} />
-                ) : (
-                  ''
-                )}
+
                 <div className=" relative">
-                  {chalet.firePlace ? (
-                    <FontAwesomeIcon className="icon" icon={faFire} />
+                  {chalet.shower ? (
+                    <FontAwesomeIcon className="icon" icon={faShower} />
                   ) : (
                     ''
                   )}
+                  <div className="rond">{chalet.shower}</div>
                 </div>
 
                 <div className=" relative">
@@ -77,10 +67,18 @@ export default function ChaletItem({ chalet }) {
                   )}
                   <div className="rond">{chalet.capacity}</div>
                 </div>
-                <p className="mr-1 text-sm">
-                  {chalet.surface}
-                  <span className="ml-1 text-sm">m2</span>
-                </p>
+                <div className="relative">
+                  <p className="ml-2 text-xs">
+                    {chalet.surface}
+                    <span className="ml-1 text-xs">m2</span>
+                  </p>
+                </div>
+
+                {/* <div className="relative">
+                  <p className="ml-2 text-xs">
+                    {chalet.price} €<span className="ml-1 text-xs">/nuit</span>
+                  </p>
+                </div> */}
               </div>
             </li>
           </ul>

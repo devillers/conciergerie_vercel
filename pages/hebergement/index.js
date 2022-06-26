@@ -5,7 +5,7 @@ import Chalet from '../../models/Chalet';
 
 const Hebergement = ({ chalets }) => (
   <Layout title="Hebergement">
-    <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+    <div className="m-auto container grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
       {chalets.map((chalet) => (
         <ChaletItem chalet={chalet} key={chalet._id} />
       ))}

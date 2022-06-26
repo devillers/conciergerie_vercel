@@ -57,8 +57,10 @@ export async function getStaticProps(context) {
 const HebergementScreen = ({ chalet }) => {
   return (
     <>
-      <Layout title="hebergement">
-        <h1 className="text-3xl pt-4 pb-4 font-poppin ">{chalet.name} </h1>
+      <Layout title="hebergement" >
+        <h1 className=" text-3xl pt-4 pb-4 font-poppin ">
+          {chalet.name}{' '}
+        </h1>
         <div className="grid overflow-hidden gap-1 md:grid-cols-2 grid-rows-2 grid-flow-row lg:grid-cols-4">
           <div className="relative box row-span-2 col-span-2 h-96  ">
             <Image
@@ -388,7 +390,7 @@ const HebergementScreen = ({ chalet }) => {
                 {chalet.airbnb ? (
                   <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-amber-600 text-white rounded-full">
                     <Link href={chalet.private}>
-                      <a target="_blank">réserver en direct</a>
+                      <a target="_blank">direct propriétaire</a>
                     </Link>
                   </div>
                 ) : (

@@ -28,7 +28,7 @@ export default function NavBar({ title }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-14 border-b-[1px] border-slate-200 flex justify-between p-6 items-center ">
+      <div className="h-14 border-b-[1px]  flex justify-between p-6 items-center ">
         <Link href={'/'}>
           <div className="h–[20px] cursor-pointer h-10">
             {/* <Image src="/logo.png" alt="logo" width={45} height={45} priority /> */}
