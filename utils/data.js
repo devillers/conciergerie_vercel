@@ -505,7 +505,7 @@ const data = {
       price: 300,
       adresse: '38 Chem. de l Usine, 74170 Saint-Gervais-les-Bains, France',
       description:
-        'Nous vous proposons de séjourner dans notre chalet familial idéalement situé, au calme, mais proche du centre de Saint-Gervais, avec jacuzzi et une vue imprenable sur le Mont Joly et les Dômes de Miage. Entièrement rénové et aménagé avec élégance, le chalet est composé de bois clair et de pierres, pour une atmosphère conviviale et chaleureuse. La pièce de vie très lumineuse suggère de belles soirées au coin du feu. La terrasse exposée plein sud permettra de profiter de chaque rayon de soleil.',
+        "L'appartement est au 2è étage d'une ferme à l'architecture haut savoyarde typique entièrement rénovée en 2020 et située en lisière de forêt dans un hameau ancien du village. Vous disposerez de 5 chambres ainsi que de 3sdb et 3wc dont 1 séparé. Espaces de réception en conséquence avec un grande table pour tous les convives et un salon confortable. La cuisine est spacieuse et équipée pour cuisiner comme à la maison et une vaste mezzanine permettra aux enfants d'avoir un espace de jeu indépendant. Le logement proximités des remontés mécaniques et du domaine de ski fond (500m). 15mn à pied de la zone de loisir du pont et 5mn du centre village. Exposé sud ouest avec le soleil en fin de journé. départ de sentiers de randonnée au pied de la maison (refuge et glacier de tré la tête). Secteur très calme et aux portes de la réserve naturelle des contamines montjoie.",
       quartier: '',
     },
     {
