@@ -264,6 +264,8 @@ const data = {
       surface: 140,
       price: 200,
       adresse: '147 Chem. du Thovex, 74170 Saint-Gervais-les-Bains, France',
+      long: 37,
+      lat: -122,
       description:
         'Bienvenus dans cette splendide ferme de 1842 fraichement rénovée avec des prestations haut de gamme, Navette au pied de la ferme pour accès au télésiège des Chattrix à 1km, et au village de St Nicolas ou St Gervais, Proche du village authentique de Saint Nicolas de Véroce, vue : Mont Blanc, chaîne des Fix, une partie des Aravis et forêt.Séjour avec cheminée, cuisine et salle à manger de 100m2. 4 chambres doubles, 1 avec canapé lit, 2 dortoirs, 5 SDB.Terrasse couverte et jardin',
       quartier:
@@ -312,6 +314,8 @@ const data = {
       surface: 140,
       price: 200,
       adresse: '147 Chem. du Thovex, 74170 Saint-Gervais-les-Bains, France',
+      long: 37,
+      lat: -122,
       description:
         'Demi-ferme de 14O m2, vue : Mont Blanc, Chaine des Fiz, Aravis et forêt. Domaine skiable Evasion/Mont Blanc ; Navette au pied de la ferme pour accès au télésiège des Chattrix (1km) et village de St Nicolas ou St Gervais. Grand séjour avec poële à bois, cuisine de 60 m2. 3 chambres doubles en suite avec salles d eau. 1 dortoir de 4 lits simples avec salle de bains (baignoire). Chauffe chaussures dans local à ski. Jardin.',
       quartier:
@@ -360,6 +364,8 @@ const data = {
       surface: 140,
       price: 200,
       adresse: '147 Chem. du Thovex, 74170 Saint-Gervais-les-Bains, France',
+      long: 37,
+      lat: -122,
       description:
         "L'appartement est au 2è étage d'une ferme à l'architecture haut savoyarde typique entièrement rénovée en 2020 et située en lisière de forêt dans un hameau ancien du village. Vous disposerez de 5 chambres ainsi que de 3sdb et 3wc dont 1 séparé. Espaces de réception en conséquence avec un grande table pour tous les convives et un salon confortable. La cuisine est spacieuse et équipée pour cuisiner comme à la maison et une vaste mezzanine permettra aux enfants d'avoir un espace de jeu indépendant. Le logement proximités des remontés mécaniques et du domaine de ski fond (500m). 15mn à pied de la zone de loisir du pont et 5mn du centre village. Exposé sud ouest avec le soleil en fin de journé. départ de sentiers de randonnée au pied de la maison (refuge et glacier de tré la tête). Secteur très calme et aux portes de la réserve naturelle des contamines montjoie.",
       quartier: '',
@@ -407,6 +413,8 @@ const data = {
       surface: 140,
       price: 700,
       adresse: '147 Chem. du Thovex, 74170 Saint-Gervais-les-Bains, France',
+      long: 37,
+      lat: -122,
       description:
         'Calme absolu à Bionnassay (alt. 1400 m), sur le GR Tour du Mont Blanc, avec une vue imprenable sur le mont Vorassay et laiguille du Gouter. Cosy, élégant et chaleureux. Réhabilité par un architecte en 2021 dans le respect des matériaux du pays (vieux bois, pierre, ardoise). Expérience d immersion ht montagne, à seulement 15 mn de St Gervais, de ses commodités & domaines skiables. 4X4 à disposition (obligatoire l hiver). Idéal vacances sportives (rando, raquettes) ou télétravail en pleine nature.',
       quartier:
@@ -456,6 +464,8 @@ const data = {
       price: 120,
       adresse:
         '2440 route de saint nicolas, 74170 Saint-Gervais-les-Bains, France',
+      long: 37,
+      lat: -122,
       description:
         "Appartement présentant une superficie de 43m2, une chambre, une salle de bain et toilette séparé, 4 couchages avec un lit double en 160 dans la chambre et un canapé lit en 140 dans le salon . Vue panoramique sur le massif du Mont-Blanc dont on peut profiter pleinement du balcon. Décoration soignée alliant le modern du design et l'authenticité du vieux bois . Situé à 120m du télésiège menant au domaine skiable St Gervais - Mégève offrant 420km des pistes au pieds du Mont-Blanc .",
       quartier: '',
@@ -503,6 +513,8 @@ const data = {
       surface: 120,
       price: 300,
       adresse: '38 Chem. de l Usine, 74170 Saint-Gervais-les-Bains, France',
+      long: 37,
+      lat: -122,
       description:
         "L'appartement est au 2è étage d'une ferme à l'architecture haut savoyarde typique entièrement rénovée en 2020 et située en lisière de forêt dans un hameau ancien du village. Vous disposerez de 5 chambres ainsi que de 3sdb et 3wc dont 1 séparé. Espaces de réception en conséquence avec un grande table pour tous les convives et un salon confortable. La cuisine est spacieuse et équipée pour cuisiner comme à la maison et une vaste mezzanine permettra aux enfants d'avoir un espace de jeu indépendant. Le logement proximités des remontés mécaniques et du domaine de ski fond (500m). 15mn à pied de la zone de loisir du pont et 5mn du centre village. Exposé sud ouest avec le soleil en fin de journé. départ de sentiers de randonnée au pied de la maison (refuge et glacier de tré la tête). Secteur très calme et aux portes de la réserve naturelle des contamines montjoie.",
       quartier: '',
@@ -566,6 +578,8 @@ const data = {
       sdb: 1,
       surface: 60,
       price: 200,
+      long: 37,
+      lat: -122,
       adresse: '119 Chem. des Prés, 74170 Saint-Gervais-les-Bains, France',
       description:
         "Bel appartement neuf décoré avec soin à proximité des remontées mécaniques et des commerces. Situé au 2ème étage dun immeuble sécurisé avec ascenseur. Il se compose d'une pièce principale équipée d'une télévision et d'une connexion wi-fi gratuite, d'une cuisine entièrement équipée, d'une chambre avec un lit king size, une chambre avec 2 lits, d'une salle de bain avec baignoire, des WC séparés. Il dispose également d'une terrasse denviron 7m² avec vue sur les aiguilles de Warens.Un garage individuel en sous-sol complète le bien.",

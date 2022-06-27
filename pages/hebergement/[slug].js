@@ -3,6 +3,7 @@ import db from '../../utils/db';
 import Chalet from '../../models/Chalet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import Map from '../../components/MapClient';
 import {
   faBath,
   faBed,
@@ -116,11 +117,14 @@ const HebergementScreen = ({ chalet }) => {
           </div>
         </div>
         <div className="grid overflow-hidden md:grid-cols-4 grid-rows-2 gap-2 grid-flow-row h-auto font-poppin ">
-          <div className="row-span-2 col-span-2 text-sm ">
-            <h3 className=" text-2xl mt-5 p-4 ">Description</h3>
-            <p className="leading-6 text-justify p-4 >">
-              {chalet.description}{' '}
+          <div className="row-span-2 col-span-2 text-sm p-4 ">
+            <h3 className=" text-2xl mt-5 ">Description</h3>
+            <p className="mt-5 leading-6 text-justify  >">
+              {chalet.description}
             </p>
+            <div className="h-48 mt-5">
+              <Map chalet={chalet} />
+            </div>
           </div>
 
           {/* partie 2 */}
@@ -366,7 +370,7 @@ const HebergementScreen = ({ chalet }) => {
                 {chalet.airbnb ? (
                   <div className="w-full px-3 py-2 text-center uppercase leading-2 tracking-wide bg-cyan-500 shadow-xl shadow-cyan-500/20 text-white rounded-full">
                     <Link href={chalet.booking}>
-                      <a target="_blank">réserver sur Airbnb</a>
+                      <a target="_blank">réserver sur Booking</a>
                     </Link>
                   </div>
                 ) : (

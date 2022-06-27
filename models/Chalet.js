@@ -44,6 +44,8 @@ const chaletSchema = new mongoose.Schema({
   price: {type: Number},
   surface: { type: Number },
   adresse: { type: String, required: true },
+  lat: {type: Number, required: true},
+  long: {type: Number, required: true},
 });
 
 const Chalet = mongoose.models.Chalet || mongoose.model('Chalet', chaletSchema);
